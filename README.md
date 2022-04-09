@@ -1,2 +1,2 @@
-install 
-git clone 
+# install 
+./install.sh
