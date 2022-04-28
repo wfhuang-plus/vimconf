@@ -1,5 +1,3 @@
-let mapleader = ","
-
 filetype on
 filetype plugin on
 filetype indent on
@@ -76,17 +74,27 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let mapleader = ","
 
+nmap s <nop>
+nmap rr <nop>
+
+nmap Q :q<cr>
+nmap S :w<cr>
+nmap svim :source $MYVIMRC<cr>
+nmap evim :edit $MYVIMRC<cr>
+
 nmap <F9> :NERDTreeToggle<cr>
-nmap ew <c-w><c-w>
+nmap tn :tabn<cr>
+nmap tp :tabp<cr>
+nmap ss <c-w><c-w>
 
-nmap <leader>gd :GoDef<cr>
-nmap <leader>gc :GoDoc<cr>
-nmap <leader>gr :GoRun<cr>
-nmap <leader>gb :GoBuild<cr>
-nmap <leader>gt :GoTest<cr>
-nmap <leader>gi :GoImport<cr>
-nmap <leader>gp :GoDrop<cr>
+nmap <F1> :res +5<cr>
+nmap <F2> :res -5<cr>
+nmap <F3> :vertcal res +5<cr>
+nmap <F4> :vertical res -5<cr>
 
+"autocmd Filetype go nmap <leader>gd :GoDef<cr>
+autocmd Filetype go nmap <leader>gb :GoBuild<cr>
+autocmd Filetype go nmap <leader>gt :GoTest<cr>
 
 
 
